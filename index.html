@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+crossorigin=""/>
+  <title>💻 IP Address Tracker 💻</title>
+</head>
+<body>
+  <div class="background-image">
+    <h1 class="titulo ">IP Adress Tracker</h1>
+    <div class="buscador">
+      <input type="text" class="buscador__input" placeholder="Search for any IP address or domain">
+      <button class="buscador__button">></button>
+    </div>
+  </div>
+    <div class="display-grid">
+      <div class="container__card">
+        <h2 class="text-DarkGray">IP ADRESS</h2>
+        <h1>192.212.174.101</h1>
+        <div class="container__card-separadora"></div>
+      </div>
+      
+      <div class="container__card">
+        <h2 class="text-DarkGray">LOCATION</h2>
+        <h1>Brooklyn, NY 10001</h1>
+        <div class="container__card-separadora"></div>
+      </div>
+      
+      <div class="container__card">
+        <h2 class="text-DarkGray">TIMEZONE</h1>
+        <h1>UTC-05:00</h1>
+        <div class="container__card-separadora"></div>
+      </div>
+      
+      <div class="container__card">
+        <h2 class="text-DarkGray">ISP</h2>
+        <h1>SpaceX Starlink</h1>
+      </div>
+    </div>
+
+ 
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="map.js"></script>
+    <script src="ipify.js"></script>
+</body>
+</html>
